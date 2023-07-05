@@ -1,0 +1,95 @@
+@use "../variables" as *;
+// WILDCARD
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  transition: 0.6s ease-in-out;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  border: none;
+}
+
+html {
+  font-size: 16px;
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $primaryColor;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $secondaryColor;
+  }
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  color: $darkColor;
+  font-size: 100%;
+
+  @media (width < 576px) {
+    font-size: 80%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: capitalize;
+}
+
+img {
+  vertical-align: middle;
+  object-fit: cover;
+  width: 100%;
+}
+
+section {
+  padding: 4.5rem 0;
+}
+
+i {
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-title-before {
+  color: $secondaryColor;
+  margin-bottom: 1rem;
+  border: 2px solid $primaryColor;
+  font-weight: 500;
+  padding: 0 1rem;
+  border-radius: 50rem;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: $darkColor;
+  font-size: 2.5rem;
+
+  @media (width <= 576px) {
+    font-size: 2rem;
+  }
+}

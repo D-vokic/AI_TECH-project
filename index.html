@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Al.Tech</title>
+
+  <!-- Meta tags -->
+  <meta name="author" content="Dusko Vokic" />
+  <meta name="keywords" content="Sass, Flexbox, Grid, Position layout Template, HTML template, CSS, CSS template" />
+  <meta name="description" content="Al.Tech template for beginers" />
+  <meta name="generator" content="Visual Studio Code" />
+  <meta name="title" content="Al.Tech project in Sass" />
+
+  <!-- Favicon -->
+  <link href="assets/img/hero-img.png" rel="icon" />
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Ubuntu:wght@500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font awesome  CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Hero section starts -->
+  <section class="hero">
+    <div class="hero__wrapper container">
+      <nav class="nav">
+        <a href="index.html" class="nav__logo">
+          <h2 class="nav__heading">
+            AI<span class="nav__dot">.</span>Tech
+          </h2>
+        </a>
+        <div class="nav__hamburger">
+          <i class="fa-solid fa-bars hamburger" id="hamburger"></i>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item dropdownPages">
+            <a href="#" class="nav__link">Pages</a>
+            <ul class="dropdown">
+              <li class="dropdown__item"><a href="#features" class="nav__link">Features</a></li>
+              <li class="dropdown__item"><a href="#team" class="nav__link">Our Team</a></li>
+              <li class="dropdown__item"><a href="#faq" class="nav__link">FAQs</a></li>
+              <li class="dropdown__item"><a href="#testimonial" class="nav__link">Testimonial</a></li>
+              <li class="dropdown__item"><a href="#404" class="nav__link">404 Page</a></li>
+            </ul>
+          </li>
+          <li class="list__item"><a href="#contact" class="nav__link">Contact</a></li>
+          <li class="list__item"><a href="#blog" class="nav__link">Blog</a></li>
+          <li class="list__item">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__wrapper">
+          <article class="article__item">
+            <a href="#" class="section-title-before">AI.Tech</a>
+            <h2 class="section-title">
+              Artificial Intelligence for Your Business
+            </h2>
+            <p class="item__p">
+              Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum
+              stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam.
+              Sit diam sit
+            </p>
+            <div class="btn__group">
+              <a href="#" class="item__btn btn2">Read more</a>
+              <a href="#contact" class="item__btn btn3">Contact Us</a>
+            </div>
+          </article>
+          <article class="article__item">
+            <img src="assets/img/hero-img.png" class="hero__img" alt="hero img" />
+          </article>
+        </div>
+      </header>
+    </div>
+  </section>
+  <!-- Hero section ends -->
+
+
+
+
+
+  <!-- About section starts -->
+  <section class="about container" id="about">
+    <article data-aos="fade-up" data-aos-delay="150">
+      <div class="img__wrapper">
+        <img src="assets/img/about-img.jpg" alt="about img" class="about__img" />
+      </div>
+    </article>
+    <article data-aos="fade-up" data-aos-delay="300">
+      <a href="#about" class="section-title-before">About Us</a>
+      <h1 class="section-title">
+        We Make Your Business Smarter with Artificial Intelligence
+      </h1>
+      <p class="about__p">
+        Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit.
+        Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit,
+        sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod
+        magna dolore erat amet
+      </p>
+      <p class="about__p">
+        Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit,
+        sed stet no labore lorem sit. Sanctus clita duo justo et tempor.
+      </p>
+      <div class="about__promo">
+        <div class="promo__item">
+          <h6 class="promo__h6">
+            <i class="fa fa-check"></i>
+            Award Winning
+          </h6>
+          <h6 class="promo__h6">
+            <i class="fa fa-check"></i>
+            Professional Staff
+          </h6>
+        </div>
+        <div class="promo__item">
+          <h6 class="promo__h6">
+            <i class="fa fa-check"></i>
+            24/7 Support
+          </h6>
+          <h6 class="promo__h6">
+            <i class="fa fa-check"></i>
+            Fair Prices
+          </h6>
+        </div>
+      </div>
+      <div class="about__info">
+        <a href="" class="about__btn abtn2">Read more</a>
+        <a href="" class="about__icons fa-brands fa-facebook"></a>
+        <a href="" class="about__icons fa-brands fa-twitter"></a>
+        <a href="" class="about__icons fa-brands fa-instagram"></a>
+        <a href="" class="about__icons fa-brands fa-linkedin-in"></a>
+      </div>
+    </article>
+  </section>
+  <!-- About section ends -->
+
+
+
+
+
+  <!-- Services section starts -->
+  <section class="services" id="services">
+    <div class="services__wrapper container">
+      <article class="wrapper__item" data-aos="fade-up">
+        <a href="#services" class="section-title-before">Our Services</a>
+        <h2 class="section-title">
+          Our Excellent AI Solutions for Your Business
+        </h2>
+        <p class="wrapper__item__p">
+          Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor
+          sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem
+          et sit, sed stet no labore lorem sit. Sanctus clita duo justo et
+          tempor eirmod magna dolore erat amet
+        </p>
+        <a href="#" class="wrapper__item__btn itemBtn2">Read More</a>
+      </article>
+      <article class="wrapper__item" data-aos="fade-up">
+        <div class="item__wrapper">
+          <div class="div__wrapper">
+            <article class="div__article">
+              <i class="fa-solid fa-robot"></i>
+              <h5>Robotic Automation</h5>
+              <p>
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet lorem.
+              </p>
+              <a href="#" class="btnHover">read more</a>
+            </article>
+            <article class="div__article">
+              <i class="fa-solid fa-power-off"></i>
+              <h5>Machine learning</h5>
+              <p>
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet lorem.
+              </p>
+              <a href="#" class="btnHover">read more</a>
+            </article>
+          </div>
+        </div>
+        <div class="item__wrapper">
+          <div class="div__wrapper">
+            <article class="div__article data-aos=" fade-up">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h5>Education & Science</h5>
+              <p>
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet lorem.
+              </p>
+              <a href="#" class="btnHover">read more</a>
+            </article>
+            <article class="div__article data-aos=" fade-up">
+              <i class="fa-solid fa-brain"></i>
+              <h5>Predictive Analysis</h5>
+              <p>
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet lorem.
+              </p>
+              <a href="#" class="btnHover">read more</a>
+            </article>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- Services section ends -->
+
+
+
+
+
+  <!-- WCU section starts -->
+  <section class="wcu">
+    <div class="wcu__wrapper container">
+      <article class="wcu__item wcuArticle__first" data-aos="fade-up">
+        <a href="#" class="section-title-before">Why Choose Us</a>
+        <h2 class="section__title wcuArticle__first__h2">We're Best in AI Industry with 10 Years of Experience</h2>
+        <p class="wcuArticle__first__p">
+          Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
+          clita duo justo et tempor
+        </p>
+        <div class="wcuArticle__first__info">
+          <li>
+            <i class="fa-sharp fa-solid fa-check"></i>
+            <span class="wcuArticle__first__li__span">Diam dolor diam ipsum et tempor sit</span>
+          </li>
+          <li>
+            <i class="fa-sharp fa-solid fa-check"></i>
+            <span class="wcuArticle__first__li__span">Diam dolor diam ipsum et tempor sit</span>
+          </li>
+          <li>
+            <i class="fa-sharp fa-solid fa-check"></i>
+            <span class="wcuArticle__first__li__span">Diam dolor diam ipsum et tempor sit</span>
+          </li>
+        </div>
+        <div class="wcuArticle__first__promoBox"> <!-- FLEX CONTAINER -->
+          <div class="clientBox">
+            <i class="fa fa-users"></i>
+            <div class="numbers">
+              <div class="item__no">
+                9999
+              </div>
+              <div class="item__pro">
+                Happy Clients
+              </div>
+            </div>
+          </div>
+          <div class="projectBox">
+            <i class="fa fa-check"></i>
+            <div class="numbers">
+              <div class="item__no">
+                9999
+              </div>
+              <div class="item__pro">
+                Project Complete
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="wcu__item" data-aos="fade-up">
+        <img src="assets/img/feature.png" class="wcuArticle__second__img" alt="wcu img">
+      </article>
+    </div>
+  </section>
+  <!-- WCU section ends -->
+
+
+
+
+
+  <!-- FAQ section starts -->
+  <section class="faq" id="faq">
+    <a href="#" class="section-title-before">Popular FAQs</a>
+    <h2 class="section__title faq__heading">Frequently Asked Questions</h2>
+    <article class="faq__wrapper container" data-aos="fade-up">
+      <article class="faq__item active">
+        <h5 class="faq__h5">
+          How to build a website?
+          <span class="fa fa-angle-down"></span>
+        </h5>
+      </article>
+      <article class="faq__item data-aos=" fade-up">
+        <h5 class="faq__h5">
+          How to build a website?
+          <span class="fa fa-angle-down"></span>
+        </h5>
+      </article>
+      <article class="faq__item data-aos=" fade-up">
+        <h5 class="faq__h5">
+          How to build a website?
+          <span class="fa fa-angle-down"></span>
+        </h5>
+      </article>
+      <article class="faq__item data-aos=" fade-up">
+        <h5 class="faq__h5">
+          How to build a website?
+          <span class="fa fa-angle-down"></span>
+        </h5>
+      </article>
+      <article class="faq__item data-aos=" fade-up">
+        <h5 class="faq__h5">
+          How to build a website?
+          <span class="fa fa-angle-down"></span>
+        </h5>
+      </article>
+      <article class="faq__item data-aos=" fade-up">
+        <h5 class="faq__h5">
+          How to build a website?
+          <span class="fa fa-angle-down"></span>
+        </h5>
+      </article>
+      <article class="faq__item data-aos=" fade-up">
+        <h5 class="faq__h5">
+          How to build a website?
+          <span class="fa fa-angle-down"></span>
+        </h5>
+      </article>
+      <article class="faq__item data-aos=" fade-up">
+        <h5 class="faq__h5">
+          How to build a website?
+          <span class="fa fa-angle-down"></span>
+        </h5>
+      </article>
+    </article>
+  </section>
+  <!-- FAQ section ends -->
+
+
+
+
+
+  <!-- Blog section starts -->
+  <section class="blog" id="blog">
+    <a href="#" class="section-title-before">Case Study</a>
+    <h2 class="section__title blog__heading container">Explore Our Recent AI Case Studies</h2>
+    <div class="blog__wrapper container">
+      <article class="blog__item" data-aos="fade-up">
+        <img src="assets/img/project-1.jpg" alt="blog img" class="blog__img">
+        <a href="#" class="blog__position">
+          <small>Robotic Automation</small>
+          <h5 class="blog__h5 section-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim.</h5>
+          <span class="fa fa-arrow-right"></span>
+        </a>
+      </article>
+      <article class="blog__item" data-aos="fade-up">
+        <img src="assets/img/project-2.jpg" alt="blog img" class="blog__img">
+        <a href="#" class="blog__position">
+          <small>Machine Learning</small>
+          <h5 class="blog__h5 section-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim.</h5>
+          <span class="fa fa-arrow-right"></span>
+        </a>
+      </article>
+      <article class="blog__item" data-aos="fade-up">
+        <img src="assets/img/project-3.jpg" alt="blog img" class="blog__img">
+        <a href="#" class="blog__position">
+          <small>Productive Analysis</small>
+          <h5 class="blog__h5 section-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim.</h5>
+          <span class="fa fa-arrow-right"></span>
+        </a>
+      </article>
+    </div>
+  </section>
+  <!-- Blog section ends -->
+
+
+
+
+
+  <!-- Team section starts -->
+  <section class="team" id="team">
+    <div class="team__wrapper container">
+      <article class="team__item" data-aos="fade-up">
+        <a href="#team" class="section-title-before">Our Team</a>
+        <h2 class="section-title">
+          Meet Our Experienced Team Members
+        </h2>
+        <p class="team__item__p">
+          Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor
+          sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem
+          et sit, sed stet no labore lorem sit. Sanctus clita duo justo et
+          tempor eirmod magna dolore erat amet
+        </p>
+        <a href="#" class="team__item__btn itemBtn2">Read More</a>
+      </article>
+      <article class="team__item" data-aos="fade-up">
+        <div class="item__wrapper">
+          <div class="div__wrapper">
+            <article class="div__article">
+              <img src="assets/img/team-1.jpg" alt="team img" class="team__img">
+              <h5>Boris Johnson</h5>
+              <p>
+                Founder & CEO
+              </p>
+              <ul class="team__social">
+                <a href="#" class="fa-brands fa-facebook-f social__icon"></a>
+                <a href="#" class="fa-brands fa-twitter social__icon"></a>
+                <a href="#" class="fa-brands fa-instagram social__icon"></a>
+                <a href="#" class="fa-brands fa-linkedin-in social__icon"></a>
+              </ul>
+            </article>
+            <article class="div__article">
+              <img src="assets/img/team-2.jpg" alt="team img" class="team__img">
+              <h5>Adam Crew</h5>
+              <p>
+                Executive Manager
+              </p>
+              <ul class="team__social">
+                <a href="#" class="fa-brands fa-facebook-f social__icon"></a>
+                <a href="#" class="fa-brands fa-twitter social__icon"></a>
+                <a href="#" class="fa-brands fa-instagram social__icon"></a>
+                <a href="#" class="fa-brands fa-linkedin-in social__icon"></a>
+              </ul>
+            </article>
+          </div>
+        </div>
+        <div class="item__wrapper">
+          <div class="div__wrapper">
+            <article class="div__article">
+              <img src="assets/img/team-3.jpg" alt="team img" class="team__img">
+              <h5>Kate Winslet</h5>
+              <p>
+                Co Founder
+              </p>
+              <ul class="team__social">
+                <a href="#" class="fa-brands fa-facebook-f social__icon"></a>
+                <a href="#" class="fa-brands fa-twitter social__icon"></a>
+                <a href="#" class="fa-brands fa-instagram social__icon"></a>
+                <a href="#" class="fa-brands fa-linkedin-in social__icon"></a>
+              </ul>
+            </article>
+            <article class="div__article">
+              <img src="assets/img/team-4.jpg" alt="team img" class="team__img">
+              <h5>Cody Gardner</h5>
+              <p>
+                Project Manager
+              </p>
+              <ul class="team__social">
+                <a href="#" class="fa-brands fa-facebook-f social__icon"></a>
+                <a href="#" class="fa-brands fa-twitter social__icon"></a>
+                <a href="#" class="fa-brands fa-instagram social__icon"></a>
+                <a href="#" class="fa-brands fa-linkedin-in social__icon"></a>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- Team section ends -->
+
+
+
+
+
+  <!-- Testimonial section starts -->
+  <section class="testimonial container" id="testimonial">
+    <div class="testimonial__wrapper">
+      <article class="testimonial__item first" data-aos="fade-up">
+        <a href="#team" class="section-title-before">Testimonial</a>
+        <h2 class="section-title">
+          What Say Our Clients!
+        </h2>
+        <p class="testimonial__item__p">
+          Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor
+          sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem
+          et sit, sed stet no labore lorem sit. Sanctus clita duo justo et
+          tempor eirmod magna dolore erat amet
+        </p>
+        <a href="#" class="testimonial__item__btn itemBtn2">Read More</a>
+      </article>
+      <div class="testimonial__arrows arrows">
+        <i class="fa fa-angle-left"></i>
+        <i class="fa fa-angle-right"></i>
+      </div>
+      <article class="testimonial__item second" data-aos="fade-up">
+        <i class="fa fa-quote-left quote"></i>
+        <p class="testimonia__item__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem officiis
+          minus nulla est incidunt maiores magni, enim iste id porro, rerum quos blanditiis. Consectetur dolore ipsam
+          soluta cumque nam voluptates ullam?
+        </p>
+        <div class="testimonial__promoBox">
+          <article class="data-aos=" fade-up">
+            <img src="assets/img/testimonial-1.jpg" alt="testimonial img" class="testimonial__img">
+          </article>
+          <article class="testimonial__item testimonial__info" data-aos="fade-up">
+            <div class="name section-title">
+              Client Name
+            </div>
+            <div class="profession">
+              Profession
+            </div>
+          </article>
+        </div>
+        <div class="carrousel-dot">
+          <a href="#"><i class="fa fa-chevron-left"></i> Previous </a>
+          <a href="#">Next <i class="fa fa-chevron-right"></i></a>
+        </div>
+      </article>
+  </section>
+  <!-- Testimonial section ends -->
+
+
+
+
+
+  <!-- News section starts -->
+  <section class="news">
+    <div class="news__wrapper">
+      <article class="news__item" data-aos="fade-up">
+        <img src="assets/img/newsletter.png" alt="news img" class="news__img">
+      </article>
+      <article class="news__item" data-aos="fade-up">
+        <a href="#" class="section-title-before">Newsletter</a>
+        <h2 class="section-title">Let's subscribe the newsletter</h2>
+        <div class="input__field">
+          <input type="text" placeholder="Enter Your Mail">
+          <i class="fa-sharp fa-solid fa-paper-plane"></i>
+        </div>
+        <p>Diam sed sed dolor stet amet eirmod</p>
+      </article>
+    </div>
+  </section>
+  <!-- News section ends -->
+
+
+
+
+
+
+  <!-- Contact section starts -->
+  <section class="contact" id="contact" data-aos="fade-up">
+    <a href="#team" class="section-title-before">contact Us</a>
+    <h2 class="section-title">
+      If You Have Any Query, Please Contact Us
+    </h2>
+    <p class="form__p">
+      The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few
+      minutes. Just copy and paste the files, add a little code and you're done. Download Now.
+    </p>
+
+    <div class="contact-wrapper">
+      <form action="" class="container">
+        <div class="form__info">
+          <input type="text" placeholder="your name" class="info" />
+          <input type="email" placeholder="email" class="info" />
+        </div>
+        <div class="form__rest">
+          <input type="text" placeholder="Subject" class="subject" />
+          <textarea cols="30" rows="10" placeholder="Message"></textarea>
+          <button>send message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Contact section ends -->
+
+
+
+
+
+  <section class="footer">
+    <div class="footer__wrapper container">
+      <div class="footer__div firstDiv">
+        <article class="footer__item">
+          <a href="index.html" class="footer__logo">
+            <h2 class="footer__heading">
+              AI<span class="footer__dot">.</span>Tech
+            </h2>
+          </a>
+          <p class="footer__p">
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore.
+            Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor
+          </p>
+        </article>
+        <article class="footer__item">
+
+          <h3 class="section-title">Get In Touch</h3>
+          <div class="footer__item__info">
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+            <span>Main STreet 123, Belgrade</span>
+          </div>
+          <div class="footer__item__info">
+            <i class="fa-solid fa-envelope"></i>
+            <span>info@gmail.com</span>
+          </div>
+          <div class="footer__item__info">
+            <i class="fa-solid fa-phone"></i>
+            <span>0115678345</span>
+          </div>
+          <div class="footer__item__icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+
+        </article>
+        <article class="footer__item">
+          <h3 class="section-title">Popular Links</h3>
+          <ul class="footer__list">
+            <a href="#about" class="footer__link">
+              <i class="fa-solid fa-angle-right"></i>
+              About Us
+            </a>
+            <a href="#contact" class="footer__link">
+              <i class="fa-solid fa-angle-right"></i>
+              Contact Us
+            </a>
+            <a href="#" class="footer__link">
+              <i class="fa-solid fa-angle-right"></i>
+              Privacy Policy
+            </a>
+            <a href="#" class="footer__link">
+              <i class="fa-solid fa-angle-right"></i>
+              Terms & Condition
+            </a>
+            <a href="#" class="footer__link">
+              <i class="fa-solid fa-angle-right"></i>
+              Career
+            </a>
+          </ul>
+        </article>
+        <article class="footer__item">
+          <h3 class="section-title">Our Services</h3>
+          <ul class="footer__list">
+            <a href="#" class="footer__link">
+              <i class="fa-solid fa-angle-right"></i>
+              Robotic Automation
+            </a>
+            <a href="#" class="footer__link">
+              <i class="fa-solid fa-angle-right"></i>
+              Machine Learning
+            </a>
+            <a href="#" class="footer__link">
+              <i class="fa-solid fa-angle-right"></i>
+              Predictive Analysis
+            </a>
+            <a href="#" class="footer__link">
+              <i class="fa-solid fa-angle-right"></i>
+              Data Science
+            </a>
+            <a href="#" class="footer__link">
+              <i class="fa-solid fa-angle-right"></i>
+              Robot Technology
+            </a>
+          </ul>
+        </article>
+      </div>
+      <div class="footer__div secondDiv">
+        <article class="copyRight__item footerCopy">
+          <p>&copy;All Rights Reserved. Designed <a href="#">By Me</a></p>
+        </article>
+        <article class="copyRight__item copyLinks">
+          <ul class="footer__list">
+            <li class="list__item"><a href="index.html" class="footer__link">Home</a></li>
+            <li class="list__item"><a href="#cookies" class="footer__link">Cookies</a></li>
+            <li class="list__item"><a href="#help" class="footer__link">Help</a></li>
+            <li class="list__item"><a href="#faq" class="footer__link faq">FAQs</a></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Top to scroll dugme starts -->
+
+  <button onclick="topFunction()" id="scrollBtn" title="Go to top">
+    <p class="fa fa-angles-up"></p>
+    <!-- Go to top -->
+  </button>
+
+  <!-- Top to scroll dugme ends -->
+
+
+
+  <!-- JavaScript Libraries -->
+  <script src=""></script>
+
+
+
+  <!-- MAIN JS FILE -->
+  <script src="assets/js/main.js"></script>
+
+
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

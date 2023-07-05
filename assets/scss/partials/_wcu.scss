@@ -1,0 +1,114 @@
+@use "../components" as *;
+
+.wcu {
+  padding-bottom: 0;
+  background-image: url("../img/bg-hero.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $primaryColor;
+
+  &__wrapper {
+    @include flex(space-between, center, wrap, 2rem);
+
+    article {
+      flex-basis: 47%;
+
+      @media (width <= 1500px) {
+        flex-basis: 80%;
+      }
+    }
+
+    .wcuArticle__first {
+      color: $lightColor;
+
+      h2 {
+        max-width: 600px;
+        padding: 1.5rem 0;
+        font-size: 2rem;
+
+        @media (width <= 576px) {
+            max-width: 100%;
+            font-size: 1.5rem;
+          }
+      }
+
+        .section-title-before {
+          color: #fff;
+          margin-bottom: 1rem;
+          border: 1px solid #fff;
+          font-weight: 500;
+          padding: 0 1rem;
+          border-radius: 50rem;
+          text-transform: capitalize;
+          display: inline-block;
+        }
+      
+
+      p {
+        margin-bottom: 1rem;
+        max-width: 600px;
+      }
+
+      .wcuArticle__first__info {
+        margin-bottom: 1rem;
+
+        li {
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+
+          i {
+            @include icon();
+            margin-right: 1rem;
+
+            @media (width <= 576px) {
+              @include icon(
+                1rem,
+                0px,
+                0.7rem
+              );
+              margin-right: 0.3rem;
+            }
+          }
+        }
+      }
+
+      .wcuArticle__first__promoBox {
+        @include flex(flex-start, center, wrap, 3rem);
+        margin-bottom: 2rem;
+
+        @media (width <= 1500px) {
+          display: block;
+          max-width: 500px;
+          margin: left;
+        }
+
+        .clientBox,
+        .projectBox {
+          @include flex();
+          background-color: $secondaryColor;
+          padding: 1rem 5rem 1rem 1rem;
+          border-radius: 0.5rem;
+          text-align: left;
+          margin-top: 1rem;
+          line-height: 1.2;
+
+          @media (width <= 1500px) {
+            padding: 1rem;
+          }
+
+          .item__no {
+            font-size: 1.5rem;
+            font-weight: 900;
+          }
+
+          i {
+            font-size: 2rem;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

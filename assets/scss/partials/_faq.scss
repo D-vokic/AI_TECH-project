@@ -1,0 +1,45 @@
+@use "../components/" as *;
+
+.faq {
+  text-align: center;
+
+  .faq__heading {
+    margin: 1rem 0;
+    font-size: 3rem;
+    max-width: 550px;
+    margin: auto;
+
+    @media (width <= 992px) {
+        max-width: 100%;
+    }
+
+    @media (width <= 576px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  .faq__wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr) );
+    gap: 1rem;
+    margin-top: 2rem;
+
+    @media (width <= 992px) {
+        grid-template-columns: 1fr;
+    }
+
+    .faq__item{
+        padding: 1rem;
+        background-color: #f4f7fe;
+        
+        .faq__h5{
+            @include flex(space-between, center, row nowrap);
+        }
+    }
+
+    .active{
+        border: 5px solid #d4d6d9;
+        border-radius: 10px 10px 0 0;
+    }
+  }
+}

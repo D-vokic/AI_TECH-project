@@ -1,0 +1,118 @@
+@use "../components" as *;
+
+.team {
+  background-color: $lightColor;
+
+  &__wrapper {
+    @include flex(space-between, center, wrap, 2rem);
+
+    article {
+      flex: 1 0 45%;
+
+      @media (width <= 1200px) {
+        flex: 1 0 80%;
+      }
+
+      h2 {
+        max-width: 500px;
+
+        @media (width <= 576px) {
+          text-align: left;
+          font-size: 1.5rem;
+        }
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      .itemBtn2 {
+        @include btn(
+          $primaryColor,
+          $lightColor,
+          $primaryColor,
+          0.6rem
+        );
+
+        @media (width <= 576px) {
+          text-align: center;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+.team__item:last-child {
+  @include flex(space-between, center, wrap, 1rem);
+  text-align: center;
+  padding: 1rem;
+
+  @media (width <= 768px) {
+    justify-content: center;
+  }
+
+  .item__wrapper {
+    flex: 1 0 40%;
+
+    @media (width <= 768px) {
+      flex: 1 0 80%;
+    }
+
+    .div__wrapper {
+      .div__article {
+        background-color: white;
+        margin-bottom: 1rem;
+        padding: 1rem 2rem;
+        border-radius: 0.7rem;
+
+        &:hover {
+        box-shadow: -3px 1px 8px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -3px 1px 8px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -3px 1px 8px 0px rgba(0,0,0,0.75);
+        }
+
+        .team__img {
+          border-radius: 50%;
+        }
+
+        h5 {
+          margin-top: 2rem;
+          font-size: 1.3rem;
+          font-weight: 500;
+
+          @media (width <= 576px) {
+            font-size: 1.1rem;
+            margin-top: 1rem;
+          }
+        }
+
+        p {
+          font-size: 0.9rem;
+          padding-bottom: 1rem;
+          color: $darkColor;
+
+          @media (width <= 576px) {
+            padding-bottom: 0.5rem;
+          }
+        }
+
+        .team__social {
+          .social__icon {
+            @include icon(
+              2.5rem,
+              0px,
+              1.1rem,
+              $primaryColor,
+              $lightColor,
+              $primaryColor,
+              $lightColor,
+              0.8rem,
+              1.7rem
+            );
+          }
+        }
+      }
+    }
+  }
+}

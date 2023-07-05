@@ -1,0 +1,105 @@
+@use "../components" as *;
+
+.about {
+  @include flex(space-between, center, wrap, 4rem);
+
+  article {
+    flex: 1 0 45%;
+    
+    @media (width <= 1200px) {
+      flex: 1 0 80%;
+    }
+
+    .img__wrapper {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url(../../assets/img/bg-about-img.png) top left no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .about__btn {
+      @include btn();
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+
+      @media (width <= 576px) {
+        text-align: left;
+        font-size: 1.5rem;
+      }
+    }
+
+    .about__p {
+      padding: 0.8rem 0;
+    }
+
+    .about__promo {
+      padding: 1rem 0;
+      @include flex(flex-start, center, wrap, 10rem);
+      
+      @media (width <= 576px) {
+        flex-direction: column;
+        gap: 0.6rem;
+        align-items: flex-start;
+      }
+
+      .promo__item {
+        border: 2px solid rem;
+        font-size: 1.5rem;
+
+        h6 {
+          margin-bottom: 0.8rem;
+        }
+      }
+    }
+
+    .about__info {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+      @media (width <= 576px) {
+        gap: 0.6rem;
+      }
+      .abtn2 {
+        @include btn(
+          $primaryColor,
+          $lightColor,
+          $primaryColor,
+          0.6rem
+        );
+
+        @media (width <= 576px) {
+          padding: 0.3rem;
+          font-size: 0.8rem;
+          text-align: center;
+        }
+        @media (width <= 576px) {
+          display: none;
+        }
+      }
+
+      .about__icons {
+        font-size: 1.2rem;
+        border: 1px solid $darkColor;
+        border-radius: 50%;
+        padding: 0.6rem;
+
+        &:hover {
+          background-color: $primaryColor;
+          color: $lightColor;
+        }
+      }
+    }
+  }
+}

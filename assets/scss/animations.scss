@@ -1,0 +1,19 @@
+@use "variables" as *;
+
+@keyframes heroAnimation {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    70% {
+        transform: translateX(200px);
+        opacity: 0.75;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

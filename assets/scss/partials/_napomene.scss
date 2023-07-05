@@ -1,0 +1,28 @@
+@use '../components/' as *;
+
+.napomene{
+    background-color: rgb(149, 0, 255);
+    color: $lightColor;
+    text-align: center;
+
+    h1{
+        margin-bottom: 1rem;
+    }
+}
+
+.napomeneWcu{
+   padding: 1rem 0;
+    background-color: black;
+}
+
+.napomeneFAQ{
+    text-align: left;
+    padding: 1rem 0;
+
+    span{
+        background-color: $lightColor;
+        color: $darkColor;
+        font-weight: 500;
+        padding: .3rem ;
+    }
+}

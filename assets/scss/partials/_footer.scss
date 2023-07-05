@@ -1,0 +1,216 @@
+@use '../components/' as *;
+
+.footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../../assets/img/footer.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 0;
+
+  .footer__wrapper {
+    .firstDiv {
+      @include flex(space-between, stretch, wrap);
+      border-bottom: 0.5px solid $lightColor;
+      padding-bottom: 2rem;
+
+      @media (width <= 1200px) {
+        justify-content: flex-end;
+        gap: 2rem;
+      }
+
+      @media (width <= 1200px) {
+        .footer__logo,
+        .footer__p,
+        .footer__item__info,
+        .footer__item__icons,
+        .footer__list {
+          text-align: center;
+        }
+      }
+
+      @media (width <= 768px) {
+        justify-content: space-between;
+        display: block;
+      }
+
+      .footer__item {
+        flex-basis: 23%;
+
+        @media (width <= 1200px) {
+          flex-basis: 45%;
+          text-align: center;
+        }
+
+        @media (width <= 768px) {
+          flex-basis: 80%;
+          text-align: left;
+        }
+
+        .footer__logo {
+          color: $lightColor;
+          font-size: 1.8rem;
+          font-weight: 700;
+          line-height: 0.5;
+
+          .footer__dot {
+            color: $darkColor;
+          }
+        }
+
+        .footer__p {
+          color: $mediumColor;
+          padding: 2rem 0;
+          font-weight: 500;
+        }
+
+        h3 {
+          text-align: left;
+          color: white;
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+          max-width: 100%;
+          font-weight: 600;
+
+          @media (width <= 1200px) {
+            text-align: center;
+          }
+        }
+
+        .footer__item__info {
+          margin-bottom: 0.8rem;
+
+          i {
+            color: $mediumColor;
+            margin-right: 0.7rem;
+          }
+
+          span {
+            color: $mediumColor;
+          }
+        }
+
+        .footer__item__icons {
+          margin-top: 2rem;
+
+          i {
+            @include icon(
+              2rem,
+              0px,
+              1.1rem,
+              transparent,
+              $mediumColor,
+              $lightColor,
+              $primaryColor
+            );
+            border: 0.5px solid #777;
+            &:not(:last-child) {
+              margin-right: 0.3rem;
+            }
+          }
+        }
+
+        .footer__link {
+          display: block;
+          color: $mediumColor;
+
+          &:hover {
+            transform: translateX(2px);
+            letter-spacing: 1px;
+            color: $lightColor;
+          }
+          i {
+            color: $mediumColor;
+          }
+          &:not(:last-child) {
+            margin-bottom: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+
+  .secondDiv {
+    @include flex(space-between, center, wrap);
+    color: $lightColor;
+
+    article {
+      @media (width <= 768px) {
+        flex-basis: 80%;
+        margin-top: 1rem;
+        padding: 0;
+      }
+    }
+
+    .footerCopy {
+      border-right: 0;
+      @media (width <= 576px) {
+        font-size: 0.9rem;
+      }
+
+      @media (width <= 400px) {
+        font-size: 0.8rem;
+        max-width: 200px;
+      }
+      p {
+        color: $lightColor;
+
+        a {
+          color: $mediumColor;
+          border-right: 0;
+          text-decoration: underline;
+
+          &:hover {
+            color: $lightColor;
+          }
+        }
+      }
+    }
+
+    .footer__list {
+      @include flex(space-between, center, wrap, 1rem);
+      padding: 2rem 0;
+
+      @media (width <= 768px) {
+        justify-content: flex-start;
+        padding: 0 0 1rem 0;
+      }
+
+      @media (width <= 576px) {
+      }
+
+      @media (width <= 576px) {
+        font-size: 0.9rem;
+      }
+
+      @media (width <= 400px) {
+        font-size: 0.8rem;
+        justify-content: flex-start;
+        gap: 0rem;
+      }
+
+      .faq {
+        border-right: 0;
+      }
+    }
+
+    a {
+      color: $lightColor;
+      border-right: 1px solid $mediumColor;
+      padding-right: 1rem;
+
+      &:hover {
+        color: $mediumColor;
+      }
+
+      @media (width <= 768px) {
+        padding-right: 1rem;
+      }
+
+      @media (width <= 576px) {
+        border-right: 0;
+        padding-right: 0.3rem;
+      }
+    }
+  }
+}

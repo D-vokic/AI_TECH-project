@@ -1,0 +1,125 @@
+@use "variables" as *;
+
+@mixin flex($justify: center, $align: center, $flow: row wrap, $gap: 0px) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-flow: $flow;
+  gap: $gap;
+}
+
+@mixin positioning(
+  $position: absolute,
+  $top: auto,
+  $right: auto,
+  $bottom: auto,
+  $left: auto
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+
+  @if ($top ==50%) {
+    transform: translateY(-50%);
+  } @else if($left ==50% or $right ==50%) {
+    transform: translateX(-50%);
+  } @else if($left ==50% and $top ==50%) {
+    transform: translate(-50%);
+  }
+}
+
+@mixin icon(
+  $units: 2rem,
+  $borderRadius: 0px,
+  $fontSize: 1.1rem,
+  $bg: $lightColor,
+  $color: $primaryColor,
+  $bgHover: none,
+  $colorHover: none,
+  $fontSize1: 0.8rem,
+  $units1: 1.7rem
+) {
+  height: $units;
+  width: $units;
+  line-height: $units;
+  border-radius: 50%;
+  font-size: $fontSize;
+  text-align: center;
+  cursor: pointer;
+  background: $bg;
+  color: $color;
+
+  &:hover {
+    background: $bgHover;
+    color: $colorHover;
+  }
+
+  @media (width <= 576px) {
+    font-size: $fontSize1;
+    height: $units1;
+  width: $units1;
+  line-height: $units1;
+  }
+}
+
+
+@mixin btn(
+  $bg: $primaryColor,
+  $color: $lightColor,
+  $borderColor: $primaryColor,
+  $paddingTop: 0.5rem,
+  $bg1: #136fff,
+  $color1: $lightColor,
+  $bColor1: $primaryColor
+) {
+  background-color: $bg;
+  color: $color;
+  border-color: $borderColor;
+  padding: $paddingTop;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-radius: 50rem;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid white;
+  font-size: 1rem;
+  
+  &:hover {
+    background-color: $bg1;
+    color: $color1;
+    border-color: $bColor1;
+  }
+
+  @media (width < 576px) {
+    font-size: 0.9rem;
+    padding: 0.8rem .9rem;
+  }
+}
+
+@mixin btnSmall(
+  $bg: transparent,
+  $color: $lightColor,
+  $paddingTop: 0.5rem,
+  $bg1: transparent,
+  $color1: $darkColor,
+  $bColor1: 0.5px solid #ddd
+) {
+  background-color: $bg;
+  color: $color;
+  padding: $paddingTop 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-radius: 50rem;
+  display: inline-block;
+  cursor: pointer;
+  border: 0.5px solid #ddd;
+  font-size: 1rem;
+  
+  &:hover {
+    background-color: $bg1;
+    color: $color1;
+    border-color: $bColor1;
+  }
+}

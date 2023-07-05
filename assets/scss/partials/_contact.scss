@@ -1,0 +1,122 @@
+@use '../components/' as *;
+
+.contact {
+  padding-bottom: 0;
+  text-align: center;
+
+  h2 {
+    max-width: 500px;
+    margin: auto;
+
+    @media screen and (max-width: 576px) {
+      max-width: 100%;
+      font-size: 1.5rem;
+    }
+  }
+
+  .form__p{
+    max-width: 750px;
+    margin: auto;
+    padding-top: 1rem;
+  }
+
+  &-wrapper {
+    padding: 2rem 0;
+
+    form {
+      .form__info {
+        @include flex(center, center, wrap, 1rem);
+  
+        .info {
+          flex-basis: 30%;
+          color: $darkColor;
+            font-size: 1rem;
+            font-weight: 200;
+
+            @media screen and (max-width: 768px) {
+              flex-basis: 100%;
+            }
+
+            &::placeholder {
+                color: $darkColor;
+                font-size: 1rem;
+                font-weight: 200;
+              }
+        }
+      }
+
+      .form__rest {
+        @include flex(center, center, wrap, 1rem);
+
+        .subject {
+          flex-basis: 61%;
+          color: $darkColor;
+          font-size: 1rem;
+          font-weight: 200;
+
+          @media screen and (max-width: 768px) {
+            flex-basis: 100%;
+          }
+
+          &::placeholder {
+            color: $darkColor;
+            font-size: 1rem;
+            font-weight: 200;
+          }
+        }
+
+        textarea {
+          padding: 1rem;
+          text-transform: capitalize;
+          color: red;
+          border: 1px solid #d3d3d3;
+          border-radius: 10px;
+
+          flex-basis: 61%;
+
+          @media screen and (max-width: 768px) {
+            flex-basis: 100%;
+          }
+
+          &::placeholder {
+            color: $darkColor;
+            font-size: 1rem;
+            font-weight: 200;
+          }
+        }
+      }
+
+      button {
+        @include btn(
+          $primaryColor,
+          $lightColor,
+          $primaryColor,
+          1rem,
+        #136fff,
+          $lightColor,
+          $primaryColor
+        );
+        margin: 0.5rem auto 0; /*gore, horizontalno, dole*/
+        flex-basis: 61%;
+        border-radius: 10px;
+
+        @media screen and (max-width: 768px) {
+          flex-basis: 100%;
+        }
+      }
+
+      input {
+        padding: 1rem;
+        text-transform: capitalize;
+        color: red;
+        margin-bottom: 1rem;
+        border: 1px solid #d3d3d3;
+        border-radius: 10px;
+
+        &::placeholder {
+          color: black;
+        }
+      }
+    }
+  }
+}
