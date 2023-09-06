@@ -12,7 +12,7 @@ Hi, I am Duško.
 
 🔭 I hope not the last.
 
-👯 TThis is project done in HTML, CSS/SASS And JavaScript.
+👯 This is project done in HTML, CSS/SASS And JavaScript.
 
 👨‍💻 The tenth project in a row where I started using the new rule @use instead of the old @import rule.
 
