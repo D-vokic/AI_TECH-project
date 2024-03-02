@@ -1,4 +1,4 @@
-# 10-AL_TECH-project
+# AL_TECH-project
  https://D-vokic.github.io/10-AI_TECH-project/
 
 Hi, I am Duško.
