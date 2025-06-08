@@ -1,5 +1,6 @@
 # AL_TECH-project
- https://D-vokic.github.io/10-AI_TECH-project/
+
+Take it for a spin! Full interactive demo [here](https://d-vokic.github.io/AI_TECH-project/)
 
 Hi, I am Duško.
 
